@@ -1,5 +1,7 @@
 # The-last-Forca
 
+Esse é um trabalho da disciplina Algebra Linear e Teoria da Informação, do curso ciências da computação do Insper. A ideia é criar um modelo de jogador para jogar e ganhar o máximo de vezes possivéis o jogo da forca.
+
 ## Como Rodar
 
 - Para rodar o código basta executar o arquivo "forca.ipynb", não é necessário a instalação de nenhuma biblioteca.
