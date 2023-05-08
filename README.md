@@ -18,7 +18,7 @@ Sendo representado como: 10100010001
 
 total = 11 bits
 
-![Arvore_Inicial](arvore_inicial.png)
+![Arvore_Inicial](Arvore_inicial.png)
 
 
 Porém podemos através do código de huffman alterar a distribuição de bits. Primeiro olhamos para distribuição das letras individualmente:
