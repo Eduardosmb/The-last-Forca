@@ -10,15 +10,16 @@ Esse é um trabalho da disciplina Algebra Linear e Teoria da Informação, do cu
 
 O código de huffman tem como objetivo comprimir o máximo possivel os bits de um código, isso com o intuito de agilizar seu tempo de processamento. Para isso, fazemos a análise dos elementos mais frequentes. Vamos então usar como exemplo a palavra $BANANA$. Nesse caso a distribuição de bits inicial acontece da seguinte forma:
 
-* N = 1 = 1 bits
+* N = 00 = 2 bits
 * A = 01 = 2 bits
-* B = 00 = 2 bits
+* B = 1 = 1 bits
 
-Sendo representado como: 0001101101
+Sendo representado como: 10100010001
 
-total = 10 bits
+total = 11 bits
 
-#Inserir desenho da arvore
+![Avore_Final](arvore_inicial.png)
+
 
 Porém podemos através do código de huffman alterar a distribuição de bits. Primeiro olhamos para distribuição das letras individualmente:
 
@@ -36,7 +37,7 @@ Sendo representado como: 001011011
 
 total = 9 bits
 
-# inserir desenho da arvore
+![Avore_Final](arvore_final.png)
 
 
 
