@@ -4,43 +4,40 @@ Esse é um trabalho da disciplina Algebra Linear e Teoria da Informação, do cu
 
 ## Como Rodar
 
-- Para rodar o código basta executar o arquivo "forca.ipynb", não é necessário a instalação de nenhuma biblioteca.
-
-## Código de Huffman
-
-O código de huffman tem como objetivo comprimir o máximo possivel os bits de um código, isso com o intuito de agilizar seu tempo de processamento. Para isso, fazemos a análise dos elementos mais frequentes. Vamos então usar como exemplo a palavra $BANANA$. Nesse caso a distribuição de bits inicial acontece da seguinte forma:
-
-* N = 00 = 2 bits
-* A = 01 = 2 bits
-* B = 1 = 1 bits
-
-Sendo representado como: 10100010001
-
-total = 11 bits
-
-![Arvore_Inicial](Arvore_Inicial.png)
-
-
-Porém podemos através do código de huffman alterar a distribuição de bits. Primeiro olhamos para distribuição das letras individualmente:
-
-* N = 2 aparições
-* A = 3 aparições
-* B = 1 aparição
-
-Dessa forma podemos reconstruir a árvore, visando os menores bits para as letras mais frequentes:
-
-* N = 01 = 2 bits
-* A = 1 = 1 bits
-* B = 00 = 2 bits
-
-Sendo representado como: 001011011
-
-total = 9 bits
-
-![Avore_Final](arvore_final.png)
-
-
+- Para rodar o código execute o arquivo "forca.ipynb", não é necessário a instalação de nenhuma biblioteca.
 
 ## Implementação
 
-Usamos o código de huffman para realizar a inteligência por trás do nosso jogador. Em toda rodada de toda partida verificamos qual é a letra mais frequente em nosso banco de dados para tentar adivinhar(sem repetir letras). Caso ele adivinhe ou erre, a lista de palavras possiveis é filtrada para apenas as palavras agora válidas.
+Para ganharmos o máximo de jogos possíveis chegamos a conclusão que o método mais eficiente é sempre buscar a letra mais provavel, uma vez que dessa forma existe uma probabilidade maior dela estar presente na palavra. Para fazer isso, usamos uma base de dados já estabelecida que possui todas as palavras que podem ser sorteadas em nosso jogo.
+
+Usaremos por exemplo a palavra $DESACUSTUME$.
+
+Inicialmente nosso jogador irá receber apenas a quantidade de caracteres que a letra tem:
+
+# Colocar imagem de 11 espacos em branco
+
+Apartir disso, filtramos a nossa base de dados para apenas as palavras com a quantidade de letras correspondentes (nesse caso onze).
+
+Agora precisamos chutar uma letra, para isso, pegamos nossa base de dados já cortada e percorremos palavra por palavra armazenando a quantidade de aparições de cada letra. Dessa forma, verificamos qual foi a letra mais recorrente e chutamos ela. Nesse caso chutamos a letra "A":
+
+# Colocar imagem atualizada
+
+Agora precisamos de uma nova letra para chutar, para isso filtramos nosso banco de dados denovo, para excluir todas as palavras que não possuem a letra "A" nas posições desejadas. 
+
+Após filtrar, precisamos achar uma nova letra para chutar. Ao percorrermos nosso novo banco de dados filtrado, verificamos que a letra mais frequente agora é a letra "E". Ao chutar a letra, recebemos a seguinte resposta:
+
+# Colocar imagem
+
+Repetimos esse processo até a palavra ficar completa com todas as letras:
+
+letras chutadas:
+1. S
+2. D
+3. C
+
+Assim nosso jogador chega a palavra certa! Importante notar que nesse exemplo o jogador não erra nenhuma letra, caso errase ele perderia uma vida e filtraria o banco de dados para todas palavras que não tenham a letra chutada.
+
+
+
+
+
