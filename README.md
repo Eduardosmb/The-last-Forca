@@ -14,19 +14,20 @@ Usaremos por exemplo a palavra $DESACUSTUME$.
 
 Inicialmente nosso jogador irá receber apenas a quantidade de caracteres que a letra tem:
 
-# Colocar imagem de 11 espacos em branco
+![forca1](forca1.png)
 
 Apartir disso, filtramos a nossa base de dados para apenas as palavras com a quantidade de letras correspondentes (nesse caso onze).
 
 Agora precisamos chutar uma letra, para isso, pegamos nossa base de dados já cortada e percorremos palavra por palavra armazenando a quantidade de aparições de cada letra. Dessa forma, verificamos qual foi a letra mais recorrente e chutamos ela. Nesse caso chutamos a letra "A":
 
-# Colocar imagem atualizada
+![forca2](forca2.png)
 
 Agora precisamos de uma nova letra para chutar, para isso filtramos nosso banco de dados denovo, para excluir todas as palavras que não possuem a letra "A" nas posições desejadas. 
 
 Após filtrar, precisamos achar uma nova letra para chutar. Ao percorrermos nosso novo banco de dados filtrado, verificamos que a letra mais frequente agora é a letra "E". Ao chutar a letra, recebemos a seguinte resposta:
 
-# Colocar imagem
+![forca3](forca3.png)
+
 
 Repetimos esse processo até a palavra ficar completa com todas as letras:
 
@@ -35,7 +36,11 @@ letras chutadas:
 2. D
 3. C
 
-Assim nosso jogador chega a palavra certa! Importante notar que nesse exemplo o jogador não erra nenhuma letra, caso errase ele perderia uma vida e filtraria o banco de dados para todas palavras que não tenham a letra chutada.
+Assim nosso jogador chega a palavra certa!
+
+![forca3](forca4.png)
+
+ Importante notar que nesse exemplo o jogador não erra nenhuma letra, caso errase ele perderia uma vida e filtraria o banco de dados para todas palavras que não tenham a letra chutada.
 
 
 
