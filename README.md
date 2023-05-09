@@ -43,4 +43,4 @@ total = 9 bits
 
 ## Implementação
 
-Usamos o código de huffman para realizar a inteligência por trás do nosso jogador. Em toda rodada de toda partida verificamos qual é a letra mais frequente em nosso banco de dados para tentar adivinhar(sem repetir letras).
+Usamos o código de huffman para realizar a inteligência por trás do nosso jogador. Em toda rodada de toda partida verificamos qual é a letra mais frequente em nosso banco de dados para tentar adivinhar(sem repetir letras). Caso ele adivinhe ou erre, a lista de palavras possiveis é filtrada para apenas as palavras agora válidas.
