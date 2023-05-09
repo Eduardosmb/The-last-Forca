@@ -18,11 +18,11 @@ Inicialmente nosso jogador irá receber apenas a quantidade de caracteres que a 
 
 Apartir disso, filtramos a nossa base de dados para apenas as palavras com a quantidade de letras correspondentes (nesse caso onze).
 
-Agora precisamos chutar uma letra, para isso, pegamos nossa base de dados já cortada e percorremos palavra por palavra armazenando a quantidade de aparições de cada letra. Dessa forma, verificamos qual foi a letra mais recorrente e chutamos ela. Nesse caso chutamos a letra "A":
+Agora precisamos chutar uma letra. Para isso, pegamos nossa base de dados já cortada e percorremos palavra por palavra armazenando a quantidade de aparições de cada letra. Dessa forma, verificamos qual foi a letra mais recorrente e chutamos ela. Nesse caso chutamos a letra "A":
 
 ![forca2](forca2.png)
 
-Agora precisamos de uma nova letra para chutar, para isso filtramos nosso banco de dados denovo, para excluir todas as palavras que não possuem a letra "A" nas posições desejadas. 
+Agora precisamos de uma nova letra para chutar. Para isso filtramos nosso banco de dados denovo, para excluir todas as palavras que não possuem a letra "A" nas posições desejadas. 
 
 Após filtrar, precisamos achar uma nova letra para chutar. Ao percorrermos nosso novo banco de dados filtrado, verificamos que a letra mais frequente agora é a letra "E". Ao chutar a letra, recebemos a seguinte resposta:
 
