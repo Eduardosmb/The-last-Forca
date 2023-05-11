@@ -22,7 +22,7 @@ Agora precisamos chutar uma letra. Para isso, pegamos nossa base de dados já co
 
 ![forca2](forca2.png)
 
-Agora precisamos de uma nova letra para chutar. Para isso filtramos nosso banco de dados denovo, para excluir todas as palavras que não possuem a letra "A" nas posições desejadas. 
+Agora precisamos de uma nova letra para chutar. Para isso filtramos nosso banco de dados de novo, para excluir todas as palavras que não possuem a letra "A" nas posições desejadas. 
 
 Após filtrar, precisamos achar uma nova letra para chutar. Ao percorrermos nosso novo banco de dados filtrado, verificamos que a letra mais frequente agora é a letra "E". Ao chutar a letra, recebemos a seguinte resposta:
 
