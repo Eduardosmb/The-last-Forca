@@ -40,7 +40,7 @@ Assim nosso jogador chega a palavra certa!
 
 ![forca3](forca4.png)
 
- Importante notar que nesse exemplo o jogador não erra nenhuma letra, caso errase ele perderia uma vida e filtraria o banco de dados para todas palavras que não tenham a letra chutada.
+ Importante notar que nesse exemplo o jogador não erra nenhuma letra, caso errasse ele perderia uma vida e filtraria o banco de dados para todas palavras que não tenham a letra chutada.
 
 
 
